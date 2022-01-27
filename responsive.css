@@ -112,10 +112,25 @@
     /* about */
     .section {
         width: 100%;
+        /* margin: 0 auto; */
+        margin-left: 180px;
+        margin-top: 64px;
+        padding: initial;
     }
     .section-heading {
-        width: 100%;
+        width: 578px;
+        text-align: center;
         /* text-align: left; */
         padding: none;
+    }
+    .section-subheading {
+        width: 578px;
+        text-align: center;
+    }
+    .about {
+        width: 578px;
+    }
+    .team {
+        width: 578px;
     }
 }
