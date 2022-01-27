@@ -133,4 +133,13 @@
     .team {
         width: 578px;
     }
+    /* tour */
+    .tour {
+        width: 864px;
+        padding-top: 50px;
+        margin-top: 80px
+    }
+    .section3 {
+        padding: initial;
+    }
 }

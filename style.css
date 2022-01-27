@@ -191,6 +191,13 @@
         height: 810px;
     }
     
+    .section3 {
+        padding: 64px;
+        width: 800px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
     .tour .section-heading {
         color: white;
     }
