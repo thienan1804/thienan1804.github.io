@@ -155,4 +155,7 @@
     #footer {
         width: 864px;
     }
+    .modal-close {
+        margin-left: 800px;
+    }
 }
