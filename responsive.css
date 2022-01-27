@@ -65,7 +65,7 @@
 
 @media(max-width:740px) {
     /* Header */
-    #header {
+    /* #header {
         overflow: hidden;
     }
     #header .search {
@@ -99,7 +99,7 @@
     }
     #nav li a {
         padding: 1px 24px;
-    }
+    } */
     /* end header */
     /* chu va anh*/
     #slider {
@@ -141,5 +141,18 @@
     }
     .section3 {
         padding: initial;
+    }
+    /* contact */
+    .section-heading1,
+    .section-subheading1 {
+        width: 700px;
+        /* map */
+    }
+    .map-section {
+        width: 864px;
+    }
+    /* footer */
+    #footer {
+        width: 864px;
     }
 }
