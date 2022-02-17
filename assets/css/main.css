@@ -296,11 +296,13 @@
                             text-decoration: none;
                         }
                         
+
                         .header__noti-img {
-                            /* height: 200px; */
-                            width: 54px;
-                            height: 33px;
-                            object-fit: cover;
+                            height: 38  px; 
+                            width: 58px;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
                         }
                         
                         .header__noti-img1 {
