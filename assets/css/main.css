@@ -504,17 +504,32 @@
                             align-items: center;
                         }
                         
+                        .header-mobile-search {
+                            /*display: none;*/
+                            padding: 0 12px;
+                        }
+
+                        .header-mobile-search-icon {
+                            color: var(--white-color);
+                            font-size: 2.6rem;
+                        }
+
                         .header__logo {
-                            width: 200px;
+                            width: 110px;
                             display: flex;
-                            justify-content: space-evenly;
+                            /*justify-content: space-evenly;*/
                         }
                         
                         .header__logo-link {
                             text-decoration: none;
                             color: transparent;
+                            line-height: 0;
                         }
                         
+                        .header-search-checkbox:checked ~ .header-search {
+                            display: flex;
+                        }
+
                         .header__logo-img {
                             background-color: ;
                             width: 80px;
@@ -527,14 +542,6 @@
                             border-radius: 2px;
                             display: flex;
                             align-items: center;
-                        }
-                        
-                        .header__logo-text {
-                            color: var(--white-color);
-                            font-size: 2.4rem;
-                            text-align: center;
-                            margin-top: 28px;
-                            margin-right: 23px;
                         }
                         
                         .header-cart {
@@ -622,7 +629,7 @@
                         }
                         
                         .header-cart-list-item {
-                            height: 56vh;
+                            max-height: 56vh;
                             padding-left: 0;
                             list-style: none;
                             overflow-y: auto;
@@ -893,6 +900,57 @@
                             color: var(--text-color);
                             display: block;
                         }
+
+                        /*Header sort bar*/
+
+                        .header-sort-bar  {
+                            position: fixed;
+                            top: var(--header-height);
+                            left: 0;
+                            right: 0;
+                            height: var(--header-sort-bar-height);
+                            background-color: var(--white-color);
+                            list-style: none;
+                            margin: 0;
+                            padding-left: 0;
+                            border-top: 1px solid #e5e5e5;
+                            border-bottom: 1px solid #e5e5e5;
+                            display: none;
+                        }
+
+                        .header-sort-item {
+                            flex: 1;
+                        }
+
+                        .header-sort-link {
+                            text-decoration: none;
+                            color: var(--text-color);
+                            font-size: 1.4rem;
+                            display: block;
+                            height: 100%;
+                            line-height: var(--header-sort-bar-height);
+                            text-align: center;
+                            position: relative;
+                        }
+
+                        .header-sort-link::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            height: 60%;
+                            border-left:1px solid #e5e5e5 ;
+                            transform: translateY(-50%);
+                        }
+
+                        .header-sort-item-active .header-sort-link {
+                            color: var(--primary-color);
+                        }
+
+                        .header-sort-item:first-child  .header-sort-link::before {
+                            display: none;
+                        }
+
                         /* App Container */                                                                                                
                         
                         .app-container {

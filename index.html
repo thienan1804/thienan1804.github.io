@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="icon" href="https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.15752-9/271375384_4743386752422239_2105091306994117352_n.png?_nc_cat=104&ccb=1-5&_nc_sid=ae9488&_nc_ohc=iTQFHT74wL4AX9jeYZb&tn=DtkLTBXx30NFchLU&_nc_ht=scontent.fsgn3-1.fna&oh=03_AVJX-drigwwJacAH2Pua1CLxHRU4uOWm-pjOW_7pWayTzg&oe=62138298"
         type="image/x-icon" />
@@ -16,106 +18,112 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@500&family=Zen+Old+Mincho&display=swap " rel="stylesheet ">
 
 
-
 </head>
 
 <body>
-    <div class="app ">
-        <div class="header ">
-            <div class="grid ">
-
-                <nav class="header__navbar ">
-                    <ul class="header__navbar-list ">
-                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate ">
+    <div class="app">
+        <div class="header">
+            <div class="grid wide ">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
                             Vào cửa hàng trên ứng dụng Tickid
 
                             <!-- header QR code -->
-                            <div class="header__qr ">
-                                <img src="./assets/img/qr_code.png " alt="QR code " class="header__qr-img ">
-                                <div class="qr-apps ">
-                                    <a href=" " class="header__qr-link " style="margin-left:11px ; ">
-                                        <img src="./assets/img/google_play.png " alt="gg play " class="qr-download-img ">
+                            <div class="header__qr">
+                                <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+                                <div class="qr-apps">
+                                    <a href="" class="header__qr-link" style="margin-left:11px ;">
+                                        <img src="./assets/img/google_play.png" alt="gg play" class="qr-download-img">
                                     </a>
-                                    <a href=" " class="header__qr-link " style="margin-right:11px ; ">
-                                        <img src="./assets/img/appstore.png " alt="appstore " class="qr-download-img ">
+                                    <a href="" class="header__qr-link" style="margin-right:11px ;">
+                                        <img src="./assets/img/appstore.png" alt="appstore" class="qr-download-img">
                                     </a>
                                 </div>
                             </div>
                         </li>
-                        <li class="header__navbar-item no-hover " style="cursor: text;color:#ddd; ">
+                        <li class="header__navbar-item no-hover" style="cursor: text;color:#ddd;">
                             Kết nối
-                            <a href=" " class="header__navbar-icon-link ">
-                                <i class="header__navbar-face ti-facebook "></i>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-face ti-facebook"></i>
                             </a>
-                            <a href=" " class="header__navbar-icon-link ">
-                                <i class="header__navbar-in ti-instagram "></i>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-in ti-instagram"></i>
                             </a>
                         </li>
                     </ul>
-                    <ul class="header__navbar-list ">
-                        <li class="header__navbar-item header__navbar-item-has-notify ">
-                            <a href=" " class="header__navbar-item-link ">
-                                <i class="header__navbar-icon ti-bell "></i>Thông báo
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon ti-bell"></i>Thông báo
                             </a>
 
 
                             <!-- notify -->
-                            <div class="header__noti ">
-                                <header class="header__noti-header ">
+                            <div class="header__noti">
+                                <header class="header__noti-header">
                                     <h3>Thông Báo Mới Nhận</h3>
                                 </header>
-                                <ul class="header__noti-list ">
+                                <ul class="header__noti-list">
                                     <li class="header__noti-item header__noti-item--viewed">
-                                        <a href=" " class="header__noti-link ">
+                                        <a href="" class="header__noti-link">
                                             <span class="header__noti-img" style="background-image:url(./assets/img/logo.png);"></span>
-                                            <div class="header__noti-info ">
-                                                <span class="header__noti-name ">Giày bóng đá Thiên Ân chính hãng</span>
-                                                <span class="header__noti-descriotion ">Mô tả giày bóng đá Thiên Ân chính 
+                                            <div class="header__noti-info">
+                                                <span class="header__noti-name">Giày bóng đá Thiên Ân chính hãng</span>
+                                                <span class="header__noti-descriotion">Mô tả giày bóng đá Thiên Ân
+                                                    chính
                                                     hãng</span>
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="header__noti-item  ">
-                                        <a href=" " class="header__noti-link ">
-                                            <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/386/658/products/1-137a46bf-7749-4950-b753-0c6e3b41e401.jpg?v=1637404891687" alt="bongda " class="header__noti-img1 ">
-                                            <div class="header__noti-info ">
-                                                <span class="header__noti-name ">Giới thiệu sản phẩm</span>
-                                                <span class="header__noti-descriotion ">Để tôn vinh tài năng trẻ của PSG, Nike một lần nữa tạo ra đôi giày có chữ ký sát thủ cho Mbappé </span>
+                                    <li class="header__noti-item">
+                                        <a href="" class="header__noti-link">
+                                            <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/386/658/products/1-137a46bf-7749-4950-b753-0c6e3b41e401.jpg?v=1637404891687" alt="bongda" class="header__noti-img1">
+                                            <div class="header__noti-info">
+                                                <span class="header__noti-name">Giới thiệu sản phẩm</span>
+                                                <span class="header__noti-descriotion">Để tôn vinh tài năng trẻ của
+                                                    PSG, Nike một lần nữa tạo ra đôi giày có chữ ký sát thủ cho Mbappé
+                                                </span>
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="header__noti-item ">
-                                        <a href=" " class=" header__noti-link ">
+                                    <li class="header__noti-item">
+                                        <a href="" class=" header__noti-link">
                                             <img src="https://i0.wp.com/azzurro-sport.com/wp-content/uploads/2021/06/Nike-Mercurial-Superfly-8-Academy-TF-CV0953-403-1.jpg?fit=512%2C512&ssl=1" alt=" bongda
-                                                   " class=" header__noti-img1 ">
-                                            <div class=" header__noti-info ">
-                                                <span class=" header__noti-name ">Giới thiệu sản phẩm</span>
-                                                <span class=" header__noti-descriotion ">Nike Mercurial Superfly 2021 là thế thế thứ 8 cùng với Nike Mercurial Vapor 14 trở nên phổ biến</span>
+                                                  " class=" header__noti-img1">
+                                            <div class=" header__noti-info">
+                                                <span class=" header__noti-name">Giới thiệu sản phẩm</span>
+                                                <span class=" header__noti-descriotion">Nike Mercurial Superfly 2021 là
+                                                    thế thế thứ 8 cùng với Nike Mercurial Vapor 14 trở nên phổ
+                                                    biến</span>
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="header__noti-item ">
-                                        <a href=" " class=" header__noti-link ">
+                                    <li class="header__noti-item">
+                                        <a href="" class=" header__noti-link">
                                             <img src="https://product.hstatic.net/1000403328/product/mercurial-dream-speed-superfly-8-academy-tf-football-shoe-1hszjr_8d8c1369fef84b48bb40c2aa4ca5ebbd_master.jpg" alt=" bongda
-                                                   " class=" header__noti-img2 ">
-                                            <div class=" header__noti-info ">
-                                                <span class=" header__noti-name ">Giới thiệu sản phẩm</span>
-                                                <span class=" header__noti-descriotion ">Chất liệu mới cho Nike mercurial VIII academy gọi là Vaporposite, là sự kết hợp của lớp lưới phủ trên cùng, phần thân là cấu trúc Titan tổng hợp và phần đế Avail Q Liner mang đến sự mềm mãi. </span>
+                                                  " class=" header__noti-img2">
+                                            <div class=" header__noti-info">
+                                                <span class=" header__noti-name">Giới thiệu sản phẩm</span>
+                                                <span class=" header__noti-descriotion">Chất liệu mới cho Nike
+                                                    mercurial VIII academy gọi là Vaporposite, là sự kết hợp của lớp
+                                                    lưới phủ trên cùng, phần thân là cấu trúc Titan tổng hợp và phần đế
+                                                    Avail Q Liner mang đến sự mềm mãi. </span>
                                             </div>
                                         </a>
                                     </li>
                                 </ul>
-                                <footer class=" header__noti-footer ">
-                                    <a href=" " class=" header__noti-footer-btn ">Xem tất cả</a>
+                                <footer class=" header__noti-footer">
+                                    <a href="" class=" header__noti-footer-btn">Xem tất cả</a>
                                 </footer>
                             </div>
-                            <li class=" header__navbar-item ">
-                                <a href=" " class=" header__navbar-item-link ">
-                                    <i class=" header__navbar-icon ti-help-alt "></i> Trợ giúp
+                            <li class=" header__navbar-item">
+                                <a href="" class=" header__navbar-item-link">
+                                    <i class=" header__navbar-icon ti-help-alt"></i> Trợ giúp
                                 </a>
                             </li>
-                            <li class=" header__navbar-item hoverr header__navbar-item--separate js-regist " style=" color:#fff; ">Đăng ký</li>
-                            <li class=" header__navbar-item hoverr js-login " style=" color:#fff; ">Đăng nhập</li>
+                            <li class=" header__navbar-item hoverr header__navbar-item--separate js-regist" style=" color:#fff;">Đăng ký</li>
+                            <li class=" header__navbar-item hoverr js-login" style=" color:#fff;">Đăng nhập</li>
                             <!-- <li class="header__navbar-item header__navbar-user">
                                 <img src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.15752-9/271375384_4743386752422239_2105091306994117352_n.png?_nc_cat=104&ccb=1-5&_nc_sid=ae9488&_nc_ohc=iTQFHT74wL4AX9jeYZb&tn=DtkLTBXx30NFchLU&_nc_ht=scontent.fsgn3-1.fna&oh=03_AVJX-drigwwJacAH2Pua1CLxHRU4uOWm-pjOW_7pWayTzg&oe=62138298"
                                     alt="" class="header__navbar-user-img">
@@ -142,14 +150,19 @@
 
                 <!-- Header with search -->
                 <div class="header-with-search ">
-                    <div class="header__logo ">
+                    <!-- <label for="mobile-search-checkbox" class="header-mobile-search">
+                        <i class="header-mobile-search-icon ti-menu"></i>
+                    </label> -->
+
+                    <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <img src=" https://e.com.vn/assets/img/shopee.png " alt=" logo " class="header__logo-img " />
                         </a>
-                        <p class="header__logo-text ">Shoppe </p>
                     </div>
 
-                    <div class="header-search ">
+                   <input type="checkbox" hidden id="mobile-search-checkbox" class="header-search-checkbox">
+
+                    <div class="header-search">
                         <div class="header-search-input-wrap">
                             <input type="text " class="header-search-input " placeholder=" Nhập để tìm kiếm sản phẩm ">
 
@@ -269,10 +282,25 @@
                     </div>
                 </div>
             </div>
+
+            <!-- <ul class="header-sort-bar">
+                <li class="header-sort-item">
+                    <a href="" class="header-sort-link">Liên quan</a>
+                </li>
+                <li class="header-sort-item header-sort-item-active">
+                    <a href="" class="header-sort-link">Mới Nhất</a>
+                </li>
+                <li class="header-sort-item">
+                    <a href="" class="header-sort-link">Bán chạy</a>
+                </li>
+                <li class="header-sort-item">
+                    <a href="" class="header-sort-link">Giá</a>
+                </li>
+            </ul> -->
         </div>
 
         <div class=" app-container ">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row app-content">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -584,7 +612,8 @@
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item-img" style="background-image: url(https://btstore.vn/wp-content/uploads/2021/02/z2339073882105_cbc4e5ab8a681bb3127dcc9477a21671-300x300.jpg);">
                                         </div>
-                                        <h4 class="home-product-item-name">Nike Mercurial Superfly 7 Elite TF- CR7 TRẮNG</h4>
+                                        <h4 class="home-product-item-name">Nike Mercurial Superfly 7 Elite TF- CR7 TRẮNG
+                                        </h4>
                                         <div class="home-product-item-price">
                                             <span class="home-product-item-price-old">937.500đ</span>
                                             <span class="home-product-item-price-current">750.000đ</span>
@@ -622,7 +651,8 @@
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item-img" style="background-image: url(https://btstore.vn/wp-content/uploads/2020/10/z2125243644069_50dc50263aaf50ef9da1447eab003652-300x300.jpg);">
                                         </div>
-                                        <h4 class="home-product-item-name">Nike Mercurial Superfly 7 Elite – Xanh Hồng</h4>
+                                        <h4 class="home-product-item-name">Nike Mercurial Superfly 7 Elite – Xanh Hồng
+                                        </h4>
                                         <div class="home-product-item-price">
                                             <span class="home-product-item-price-old">937.500đ</span>
                                             <span class="home-product-item-price-current">750.000đ</span>
@@ -660,7 +690,8 @@
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item-img" style="background-image: url(https://btstore.vn/wp-content/uploads/2020/10/z2125243745349_caa6537f3304c44a4760a640bf14eaaf-300x300.jpg);">
                                         </div>
-                                        <h4 class="home-product-item-name">Nike Mercurial Superfly 7 Elite Xanh Dương</h4>
+                                        <h4 class="home-product-item-name">Nike Mercurial Superfly 7 Elite Xanh Dương
+                                        </h4>
                                         <div class="home-product-item-price">
                                             <span class="home-product-item-price-old">937.500đ</span>
                                             <span class="home-product-item-price-current">750.000đ</span>
@@ -1538,7 +1569,7 @@
         </div>
 
         <div class=" footer ">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-2-4">
                         <h3 class="footer-heading">Chăm sóc khách hàng </h3>
@@ -1682,14 +1713,14 @@
                         <a href=" " class="auth-form__socials--facebook btn btn--size-s btn--with-icon ">
                             <i class="auth-form__socials-icon ti-facebook "></i>
                             <span class="auth-form__socials-title ">
-                                     Kết nối với Facebook
-                                 </span>
+                                Kết nối với Facebook
+                            </span>
                         </a>
                         <a href=" " class="auth-form__socials--google btn btn--size-s btn--with-icon ">
                             <i class="auth-form__socials-icon ti-google "></i>
                             <span class="auth-form__socials-title ">
-                                     Kết nối với Google
-                                </span>
+                                Kết nối với Google
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -1726,14 +1757,14 @@
                         <a href=" " class="auth-form__socials--facebook btn btn--size-s btn--with-icon ">
                             <i class="auth-form__socials-icon ti-facebook "></i>
                             <span class="auth-form__socials-title ">
-                                     Kết nối với Facebook
-                                 </span>
+                                Kết nối với Facebook
+                            </span>
                         </a>
                         <a href=" " class="auth-form__socials--google btn btn--size-s btn--with-icon ">
                             <i class="auth-form__socials-icon ti-google "></i>
                             <span class="auth-form__socials-title ">
-                                     Kết nối với Google
-                                </span>
+                                Kết nối với Google
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -1809,4 +1840,4 @@
     </script>
 </body>
 
-</html
+</html>
