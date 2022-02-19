@@ -234,6 +234,11 @@
 	    .header-cart-list:after {
 	        display: none
 	    }
+
+	    .header-mobile-search {
+	    	position: relative;
+	    	left: -26px;
+	    }
 	}
 	/*Mobile*/
 	
@@ -290,6 +295,19 @@
 	    	padding: 16px;
 	    }
 
+	    .app-content {
+	    	margin: 0 4px;
+	    }
+
+	    .pagination-item {
+	     	margin: 0;
+	     }
+
+	    .pagination-item-link {
+	    	height: 28px;
+	    	font-size: 1.6rem;
+	    	min-width: 36px;
+	    }
 
 
 	    @keyframes mobileSearchSideIn {
