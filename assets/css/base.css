@@ -56,6 +56,7 @@
 
     .hoverr:hover {
         opacity: 0.7;
+        cursor: pointer;
     }               
         /*Animation*/
 
@@ -120,6 +121,10 @@
         display: flex;
     }
 
+
+    /*Noti java*/
+
+    /*Modal*/
     .modal__body {
         --growth-form: 0.7;
         --growth-to: 1;

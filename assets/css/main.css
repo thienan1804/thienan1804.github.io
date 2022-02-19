@@ -1,7 +1,7 @@
                         .header {
                             height: var(--header-height);
                             /* background-image: linear-gradient(0, #fe6433, #f53e2d); */
-                            background-color: #fe5722;
+                            background-color: var(--primary-color);
                         }
                         
                         .header__navbar {
@@ -157,7 +157,7 @@
                             content: "";
                             display: block;
                             position: absolute;
-                            border-left: 1px solid #FB9086;
+                            border-left: 1px solid ;
                             height: 16px;
                             right: -9px;
                             top: 50%;
@@ -173,6 +173,14 @@
                         .header__navbar-icon {
                             color: white;
                             margin: 0 6px;
+                        }
+
+                        .header__navbar-mobile-img {
+                            display: none;
+                        }
+
+                        .header__navbar-mobile-text {
+                            display: none;
                         }
                         /* Header QR code */
                         
