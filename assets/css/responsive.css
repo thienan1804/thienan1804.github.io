@@ -94,11 +94,10 @@
 	     }
 
 	     .header__navbar-mobile-list {
-	     	/*padding-top: 24px;*/
-	     	margin:0;
-	     	/*padding: 0 16px;*/
+	     	margin:0;	     	
 	     	list-style: none;
-	     	display: block;
+	     	display: flex;
+	     	flex-direction: column;
 	     }
 
 	     .header__navbar-mobile-list1 {
