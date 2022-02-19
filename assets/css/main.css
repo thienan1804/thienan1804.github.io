@@ -505,19 +505,22 @@
                         }
                         
                         .header-mobile-search {
-                            /*display: none;*/
+                            display: none;
                             padding: 0 12px;
                         }
 
                         .header-mobile-search-icon {
                             color: var(--white-color);
                             font-size: 2.6rem;
+                           
                         }
 
                         .header__logo {
                             width: 110px;
                             display: flex;
                             /*justify-content: space-evenly;*/
+                            position: relative;
+                            right: 2px;
                         }
                         
                         .header__logo-link {
@@ -555,6 +558,7 @@
                             display: inline-block;
                             padding: 0 12px;
                             cursor: pointer;
+                            /*left: -14px;*/
                         }
                         
                         .header-cart-list::after {
@@ -951,6 +955,17 @@
                             display: none;
                         }
 
+                        .mobile-search-overlay {
+                            display: none;
+                        }
+
+                        .header__navbar-mobile {
+                            display: none;
+                        }
+
+                        .nav-mobile-close {
+                            display: none;
+                        }
                         /* App Container */                                                                                                
                         
                         .app-container {

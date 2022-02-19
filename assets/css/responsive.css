@@ -13,6 +13,10 @@
 	        left: 0;
 	    }
 
+	    .header-mobile-search {
+	    	display: block;
+	    }
+
 	    .header-cart-list {
 	    	position: fixed;
 	    	top: var(--header-height);
@@ -36,6 +40,94 @@
 
 	    .header-sort-bar {
 	     	display: flex
+	     }
+
+	     .mobile-search-overlay {
+	     	position: fixed;
+	     	top: 0;
+	     	right: 0;
+	     	left: 0;
+	     	bottom: 0;
+	     	background-color: rgba(0, 0, 0, 0.3);
+	     	z-index: 11;
+	     	animation: mobileSearchFadeIn linear 0.4s ;
+	     	/*display: block;*/
+	     }
+
+	     .header-search-checkbox:checked ~ .mobile-search-overlay {
+
+	     	display: block;
+	     }
+
+	     .header-search-checkbox:checked ~ .header__navbar-mobile {
+	     	transform: translateX(0);
+	     	opacity: 1;
+	     }
+
+
+	     /*Navbar*/
+
+	     
+	     .header__navbar-mobile {
+	     	position: fixed;
+	     	top: 0;
+	     	left: 0;
+	     	bottom: 0;
+	     	width: 320px;
+	     	max-width: 100%;
+	     	padding-top: 34px;
+	     	font-size: 1.6rem;
+	     	background-color: var(--white-color);
+	     	display: block;
+	     	z-index: 12;
+	     	transform: translateX(-100%);
+	     	opacity: 0;
+	     	transition: transform linear 0.2s ,opacity linear 0.2s;
+	     }
+
+	     .header__navbar-mobile-list {
+	     	/*padding-top: 24px;*/
+	     	margin:0;
+	     	/*padding: 10px 16px;*/
+	     	list-style: none;
+	     	display: block;
+	     }
+
+	     .header__navbar-mobile-icon {
+	     	color: var(--text-color);
+	     	font-size: 1.4rem;
+
+	     }
+
+	     .header__navbar-mobile-item {
+	     	color: var(--text-color) !important;
+	     	width: 100%;
+	     	margin-left: 0;
+	     	padding-top: 40px;
+	     }
+
+	     .header__navbar-mobile-item-link {
+	     	color: var(--text-color);
+	     	/*padding: 8px 0;*/
+	     	display: block;
+	     	text-decoration: none;
+	     }
+
+	     .header__navbar-mobile-icon-link {
+	     	text-decoration: none;
+	     	color: #333;
+	     	/*padding: 8px 0;*/
+	     	font-size: 1.4rem;
+	     	color: var(--text-color);
+	     }
+
+	     .nav-mobile-close {
+	     	display: block;
+	     	font-size: 1.4rem;
+	     	color: #666;
+	     	position: absolute;
+	     	top: 2rem;
+	     	right: 1rem;
 	     }
 	}
 	/*Tablet*/
@@ -117,6 +209,8 @@
 	    	padding: 16px;
 	    }
 
+
+
 	    @keyframes mobileSearchSideIn {
 	    	from {
 	    		opacity: 0;
@@ -126,6 +220,17 @@
 	    	to {
 	    		opacity: 1;
 	    		top: var(--header-height)  ;
+	    	}
+	    }
+
+	    @keyframes mobileSearchFadeIn {
+
+	    	from {
+	    		opacity: 0;
+	    	}
+
+	    	to {
+	    		opacity: 1;
 	    	}
 	    }
 	}
