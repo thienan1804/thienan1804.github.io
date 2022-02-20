@@ -421,7 +421,7 @@
 
 	@media (max-width: 360px) {
 		  .auth-form {
-	    	margin: 100px 16px 0 14px;
+	    	margin: 60px 16px 0 14px;
 	    	width: 330px;
 	    	max-width: 100%;
 	    }
