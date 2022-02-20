@@ -560,6 +560,10 @@
 	    	margin: 0 0 0 20px;
 	    }
 
+	    .modal__body {
+	    	height: 537px;
+	    }
+
 	    @keyframes mobileSearchSideIn {
 	    	from {
 	    		opacity: 0;
