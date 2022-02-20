@@ -379,6 +379,21 @@
 	    	padding: 6px 8px;
 
 	    }
+
+	    .auth-form {
+	    	width: 332px;
+	    	margin: 55px 16px 0 16px;
+	    }
+
+	    .btn.btn--size-s {
+	    	height: 42px;
+	    	margin-left: 14px;
+	    }
+
+	    .auth-form__socials-title {
+	    	margin: 0 0 0 20px;
+	    }
+
 	    @keyframes mobileSearchSideIn {
 	    	from {
 	    		opacity: 0;
