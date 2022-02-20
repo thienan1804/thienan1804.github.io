@@ -358,7 +358,7 @@
 	    }
 
 	    .footer-content {
-	    	padding: 0 16px 32px 16px;
+	    	padding: 0 20px 32px 16px;
 	    }
 
 	    .footer-heading {
@@ -382,7 +382,8 @@
 
 	    .auth-form {
 	    	width: 332px;
-	    	margin: 55px 16px 0 16px;
+	    	max-width: 100%;
+	    	margin: 55px 17px 0 16px;
 	    }
 
 	    .btn.btn--size-s {
