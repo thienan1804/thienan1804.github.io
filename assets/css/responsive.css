@@ -1,10 +1,7 @@
 	/*Mobile & Tablet*/
 	
 	@media (max-width: 1023px) {
-	    :root {
-	        --navbar-height: 0px;
-	        --header-height: 68px;
-	    }
+	    
 	    .header {
 	        position: fixed;
 	        z-index: 10;
@@ -33,7 +30,7 @@
 	    }
 
 	    .app-container {
-	        /*margin-top: calc(var(--header-height) + var(--header-sort-bar-height));*/
+	        margin-top: calc(var(--header-height) + var(--header-sort-bar-height));--line-height;
 	    }
 
 	    .hide-on-mobile-tablet {
@@ -207,10 +204,25 @@
 		  .header-noti-checkbox:checked ~ .header__noti-mobile {
 		  	display: block;
 		  }
+
+		  .app-content {
+	    	padding-top: 8px;
+	      }
+
+	      .mobile-category {
+	      	display: block;
+	      }
 	}
 	/*Tablet*/
-	
+	      
+
 	@media (min-width: 740px) and (max-width : 1023px) {
+
+		:root {
+	        --navbar-height: 0px;
+	        --header-height: 68px;
+	   	   }
+
 	    .hide-on-tablet {
 	        display: none;
 	    }
@@ -238,8 +250,15 @@
 	    }
 	}
 	/*Mobile*/
-	
+		
+
 	@media (max-width: 739px) {
+
+		:root {
+	        --navbar-height: 0px;
+	        --header-height: 54px;
+	    }
+
 	    .hide-on-mobile {
 	        display: none;
 	    }
@@ -338,8 +357,28 @@
 	    	min-width: 36px;
 	    }
 
+	    .footer-content {
+	    	padding: 0 16px 32px 16px;
+	    }
 
+	    .footer-heading {
+	    	text-align: center;
+	    }
 
+	    .footer-download,
+	    .footer-item-link {
+	    	justify-content: center;
+	    }
+
+	    .footer-download-app {
+	    	flex: unset;
+	    }
+
+	    .footer-download-app-link {
+	    	display: block;
+	    	padding: 6px 8px;
+
+	    }
 	    @keyframes mobileSearchSideIn {
 	    	from {
 	    		opacity: 0;

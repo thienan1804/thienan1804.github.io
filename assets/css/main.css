@@ -572,6 +572,8 @@
                             padding: 0 12px;
                             cursor: pointer;
                             /*left: -14px;*/
+                            -webkit-tap-highlight-color: transparent;
+
                         }
                         
                         .header-cart-list::after {
@@ -949,6 +951,11 @@
                             position: relative;
                         }
                         
+                        .header-sort-link:hover {
+                            border-bottom: 1px solid var(--primary-color);
+                            color: var(--primary-color);
+                        }
+
                         .header-sort-link::before {
                             content: "";
                             position: absolute;
@@ -961,6 +968,7 @@
                         
                         .header-sort-item-active .header-sort-link {
                             color: var(--primary-color);
+                            border-bottom: 1px solid var(--primary-color);
                         }
                         
                         .header-sort-item:first-child .header-sort-link::before {
@@ -1062,6 +1070,63 @@
                             border: 4px solid;
                             border-color: transparent transparent transparent var(--primary-color);
                         }
+
+                        /*Mobile category*/
+
+                        .mobile-category {
+                            display: none;
+                        }
+
+                        .mobile-category-list {
+                            display: flex;
+                            list-style: none;
+                            padding-left: 0;
+                            max-width: 100%;
+                            overflow-x: auto;
+                        }
+
+                        .mobile-category-list::-webkit-scrollbar {
+                            display: none;
+                        }
+
+                        .mobile-category-item {
+                            flex-shrink: 0 ;
+                            margin-right: 10px;
+                        }
+
+                        .mobile-category-item:nth-of-type(3n+1) .mobile-category-link {
+                            background-color: #87AFD8;
+                        }
+
+                        .mobile-category-item:nth-of-type(3n+2) .mobile-category-link {
+                            background-color: #76C9DB;
+                        }
+
+                        .mobile-category-item:nth-of-type(3n+3) .mobile-category-link {
+                            background-color: #88CF81;
+                        }
+
+                        .mobile-category-link {
+                            --line-height: 2rem;
+                            text-decoration: none;
+                            color: var(--white-color);
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                            text-align: center;
+                            width:110px ;
+                            height: calc(--line-height*2);
+                            overflow: hidden;
+                            display: block;
+                            border-radius: 4px;
+                            font-weight: 300;
+                            display: -webkit-box;
+                            -webkit-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            user-select: none;
+                            -webkit-user-select :none;
+                            padding: 0 6px;
+                        }
+
                         /* Home sort + filter */
                         
                         .home-filter {
@@ -1342,6 +1407,7 @@
                             font-size: 1.4rem;
                             text-transform: uppercase;
                             color: var(--text-color);
+                            line-height: 1.6;
                         }
                         
                         .footer-list {
