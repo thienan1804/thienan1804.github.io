@@ -1110,7 +1110,7 @@
                             --line-height: 2rem;
                             text-decoration: none;
                             color: var(--white-color);
-                            font-size: 1.4rem;
+                            font-size: 1.2rem;
                             line-height: 2rem;
                             text-align: center;
                             width:110px ;
@@ -1120,11 +1120,11 @@
                             border-radius: 4px;
                             font-weight: 300;
                             display: -webkit-box;
-                            -webkit-orient: vertical;
+                            -webkit-box-orient: vertical;
                             -webkit-line-clamp: 2;
                             user-select: none;
                             -webkit-user-select :none;
-                            padding: 0 6px;
+                            padding: 6px 6px;
                         }
 
                         /* Home sort + filter */
