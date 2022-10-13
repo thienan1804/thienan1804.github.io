@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    position: relative;
+    background-color: #eaeaea;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    img {
+        width: 25px;
+        height: 25px;
+        margin: 0 12px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+}

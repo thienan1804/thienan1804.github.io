@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'SFU DIN';
+    src: url('SFUDINEngAlt.eot');
+    src: url('SFUDINEngAlt.eot?#iefix') format('embedded-opentype'),
+        url('SFUDINEngAlt.woff2') format('woff2'),
+        url('SFUDINEngAlt.woff') format('woff'),
+        url('SFUDINEngAlt.ttf') format('truetype'),
+        url('SFUDINEngAlt.svg#SFUDINEngAlt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

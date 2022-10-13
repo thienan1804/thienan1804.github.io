@@ -1,0 +1,118 @@
+.form-wrapper {
+    button {
+        display: flex;
+        align-items: center;
+        font-family: 'SFU DIN';
+        font-size: 2rem;
+        margin: 18px auto;
+        background-color: #51b4ff;
+        color: var(--white-color);
+        border-radius: 4px;
+        &:hover {
+            background-color: #4c9ddb;
+        }
+
+        &:active {
+            background-color: rgba(22, 24, 35, 0.06);
+        }
+
+        .iconLogin {
+            font-size: 6rem;
+        }
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 2% 12% 10px 12%;
+    min-height: 100px;
+    box-shadow: 4px 4px 4px #72727229;
+    background-color: var(--white-color);
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    label {
+        width: 100%;
+        color: #c8c8c8;
+        font-size: 2.4rem;
+        margin-top: 6px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+}
+
+.input-wrapper {
+    position: relative;
+    font-size: 1.6rem;
+    height: 50px;
+    margin-bottom: 12px;
+
+    input {
+        font-size: 1.6rem;
+        font-family: var(--font-family);
+        height: 100%;
+        caret-color: #c8c8c8;
+        border: 1px solid #d6d6d6;
+        &::placeholder {
+            font-family: 'SFU Helvetica';
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #dfdfdf;
+            opacity: 0.8;
+        }
+    }
+
+    .showPass {
+        position: absolute;
+        top: 25%;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        margin-right: 12px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .hidePass {
+        display: none;
+    }
+}
+
+.errors {
+    width: 100%;
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 0;
+    color: rgb(248, 106, 106);
+}
+
+.textFooter {
+    display: block;
+    font-size: 2.6rem;
+    text-align: center;
+    color: var(--black-color);
+    font-weight: 550;
+    cursor: pointer;
+    &:hover {
+        color: var(--text-color);
+        text-decoration: underline;
+    }
+}
+
+.remember-password {
+    display: flex;
+    align-items: center;
+    width: 40% !important;
+    span {
+        font-size: 1.6rem;
+        user-select: none;
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
