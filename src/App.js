@@ -8,7 +8,7 @@ import ProtectedRoutes from './ProtectedRoutes';
 export const UserContext = createContext();
 
 function App() {
-    const [user, setUser] = useState({ loggedIn: true });
+    const [user, setUser] = useState({ loggedIn: false });
 
 
     return (
